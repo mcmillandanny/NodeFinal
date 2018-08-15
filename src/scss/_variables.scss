@@ -1,0 +1,16 @@
+$tablet-bp: 768px;
+$desktop-bp: 1440px;
+
+
+@mixin bp-desktop{
+	@media only screen and (min-width: $desktop-bp){
+		@content;
+	}
+}
+
+
+@mixin bp-tablet{
+	@media only screen and (min-width: $tablet-bp){
+		@content;
+	}
+}
